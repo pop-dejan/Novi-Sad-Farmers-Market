@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/9ef1dfb1e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Novi Sad Farmers Market Application >> Novi Sad Farmers Market</title>
+    <link rel="stylesheet" href="../css/appStyle.css">
+</head>
+
+<body>
+
+    <!-- ======= Navbar Section ======= -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand mr-5" id="navbar-brand" href="landingPage.html">
+                    <img src="../img/logo-icon.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler show" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item b dropdown link mx-3">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Markets
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li data-bs-dismiss="offcanvas"><a class="dropdown-item"
+                                            href="marketsFutoska.html">Futoška</a></li>
+                                    <li data-bs-dismiss="offcanvas"><a class="dropdown-item"
+                                            href="marketsLimanska.html">Limanska</a></li>
+                                    <li data-bs-dismiss="offcanvas"><a class="dropdown-item"
+                                            href="marketsKvantaska.html">Kvantaška</a></li>
+                                    <li data-bs-dismiss="offcanvas"><a class="dropdown-item"
+                                            href="marketsNajlonska.html">Najlonska</a></li>
+                                    <li data-bs-dismiss="offcanvas"><a class="dropdown-item"
+                                            href="marketsRiblja.html">Riblja</a></li>
+                                    <li data-bs-dismiss="offcanvas"><a class="dropdown-item"
+                                            href="marketsSatelitska.html">Satelitska</a></li>
+                                    <li data-bs-dismiss="offcanvas"><a class="dropdown-item"
+                                            href="marketsDetelinarska.html">Detelinarska</a></li>
+                                    <li data-bs-dismiss="offcanvas"><a class="dropdown-item"
+                                            href="marketsTemerinska.html">Temerinska</a></li>
+                                    <li data-bs-dismiss="offcanvas"><a class="dropdown-item"
+                                            href="marketsPetrovaradinska.html">Petrovaradinska</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item a mx-3 link" data-bs-dismiss="offcanvas">
+                                <a class="nav-link" href="findMarkets.html">Find Markets</a>
+                            </li>
+                            <li class="nav-item a mx-3 link" data-bs-dismiss="offcanvas">
+                                <a class="nav-link" href="newsMain1.html">News</a>
+                            </li>
+
+                            <li class="nav-item a mx-3 link" data-bs-dismiss="offcanvas">
+                                <a class="nav-link" href="marketBarometer.html">Market Barometer</a>
+                            </li>
+                            <li class="nav-item a mx-3 link" data-bs-dismiss="offcanvas">
+                                <a class="nav-link" href="seasonalProducts.html">Seasonal Products</a>
+                            </li>
+                            <li class="nav-item a mx-3 link" data-bs-dismiss="offcanvas">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ms-auto mx-3 link">
+                            <li class="nav-item a" data-bs-dismiss="offcanvas">
+                                <a class="nav-link" href="signUp.html">Sign Up</a>
+                            </li>
+                            <li class="nav-item a" data-bs-dismiss="offcanvas">
+                                <a class="nav-link" href="signIn.html">Log In</a>
+                            </li>
+                            <li class="nav-item a" id="cart-button" data-bs-dismiss="offcanvas">
+                                <a class="nav-link c" href="#" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                    <i class="bi bi-basket3 position-relative cart-button">
+                                        <span
+                                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"></span>
+                                    </i>
+                                    <p class="cart-label">CART</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+            <img src="../img/tomato-icon.png" alt="Tomato">
+        </div>
+    </header><!-- ======= Navbar Section End ======= -->
+
+    <!-- ======= Scroll button ======= -->
+    <button class="btn btn-success scroll-btn"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- ======= Scroll button End ======= -->
+
+    <!-- ======= Cart offcanvas Section ======= -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasRightLabel">
+                <div class="total-wrapper">Total: <span id="total">0</span><span id="total-unit"> din</span></div>
+            </div>
+            <button type="button" id="innerOffcanvasBtn" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <button class="btn btn-success mx-3 fw-bold buy-btn" data-bs-dismiss="offcanvas" aria-label="Close">PROCEED TO
+            CHECKOUT</button>
+        <p class="offcanvas-amount"><span class="counter">0</span> items in cart</p>
+        <div class="offcanvas-body" id="my-offcanvas-cart">
+
+        </div>
+    </div>
+    <!-- ======= Cart offcanvas Section End ======= -->
+
+    <!-- ======= Image Title Section ======= -->
+    <section class="image-title">
+        <h1 class="headline">WELCOME TO OUR NEW APP<br><span id="user"></span></h1>
+    </section><!-- ======= Image Title Section End ======= -->
+
+    <!-- ======= Categories Section ======= -->
+    <section class="categories">
+        <div class="headline-wrapper">
+            <h2>Product categories</h2>
+            <p>choose the category</p>
+        </div>
+
+        <div class="kategorija-wrapper">
+            <div class="kategorija kl" id="vegetables-link">
+                <img src="../img/app-img/vegetables-app-img.jpg" alt="Vegetables">
+                <h5>VEGETABLES</h5>
+            </div>
+            <div class="kategorija kl" id="fruits-link">
+                <img src="../img/app-img/fruits-app-img.jpg" alt="Fruit">
+                <h5>FRUITS</h5>
+            </div>
+            <div class="kategorija kl" id="other-link">
+                <img src="../img/app-img/other-app-img.jpg" alt="Other">
+                <h5>OTHER</h5>
+            </div>
+        </div>
+
+    </section><!-- ======= Categories Section End ======= -->
+
+    <!-- ======= Buy Section End ======= -->
+    <section class="buy">
+
+        <div class="cards-headline-wrapper">
+            <h2>Product categories</h2>
+            <p>choose the category</p>
+        </div>
+
+        <div class="btn-group buttons-wrapper" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check cab" name="btnradio" id="mybtnradio1" autocomplete="off">
+            <label class="btn btn-outline-success ab" id="button1" for="mybtnradio1">Vegetables</label>
+
+            <input type="radio" class="btn-check cab " name="btnradio" id="mybtnradio2" autocomplete="off">
+            <label class="btn btn-outline-success ab" id="button2" for="mybtnradio2">Fruits</label>
+
+            <input type="radio" class="btn-check cab" name="btnradio" id="mybtnradio3" autocomplete="off">
+            <label class="btn btn-outline-success ab" id="button3" for="mybtnradio3">Other</label>
+        </div>
+
+        <div class="card-wrapper grid vegetables-card"></div>
+
+        <div class="card-wrapper grid fruits-card"></div>
+
+        <div class="card-wrapper grid other-card"></div>
+
+    </section><!-- ======= Buy Section End ======= -->
+
+    <!-- ======= Final Section ======= -->
+    <form action="completeBuy.html" onsubmit="return validateForm3(this)" class="final-section">
+        <div class="final-title">CART</div>
+        <div class="order-wrapper">
+            <span class="w-title">
+                <span>Order overview:</span>
+                <span class="back-btn-wrap">
+                    <button class="btn btn-success back-btn">Back to products</button>
+                </span>
+            </span>
+
+            <div class="items-wrapper"></div>
+
+            <div class="p-total-row">
+                <span class="first">Total</span>
+                <span class="second">
+                    <span class="p-total"></span>
+                    <span> din</span>
+                </span>
+            </div>
+            <div class="ship-row">
+                <span class="first">Shipping fee</span>
+                <span class="second">
+                    <span class="ship-total"></span>
+                    <span> din</span>
+                </span>
+            </div>
+            <div class="tax-row">
+                <span class="first">Tax</span>
+                <span class="second">
+                    <span class="tax-total"></span>
+                    <span> din</span>
+                </span>
+            </div>
+            <div class="total-row">
+                <span class="first">Total with fees</span>
+                <span class="second">
+                    <span class="total-items"></span>
+                    <span> din</span>
+                </span>
+            </div>
+            <div class="address-row">
+                <label class="first" for="name">Name and surname</label>
+                <input type="text" id="final-name" name="name" class="form-control second control-3">
+                <p class="error-buy name-error"></p>
+            </div>
+            <div class="address-row">
+                <label class="first" for="address">Delivery address</label>
+                <input type="text" id="final-address" name="address" class="form-control second control-3">
+                <p class="error-buy address-error"></p>
+            </div>
+            <div class="address-row">
+                <label class="first" for="telephone">Telephone</label>
+                <input type="text" id="final-telephone" name="telephone" class="form-control second control-3">
+                <p class="error-buy telephone-error"></p>
+            </div>
+            <div class="textarea-row">
+                <p class="first">Note</p>
+                <textarea name="textarea" class="form-control second" rows="5"></textarea>
+            </div>
+            <div class="btn-wrap"><button class="btn btn-danger purchase-btn" type="submit">BUY</button></div>
+        </div>
+    </form><!-- ======= Final Section End ======= -->
+
+    <!-- ======= Footer Section ======= -->
+    <section class="footer bg-dark">
+        <div class="footer-wrapper">
+            <div class="contact text-center py-3">CONTACT WITH US</div>
+            <ul class="nav socilas justify-content-center border-bottom pb-3">
+                <li class="ms-3 x-twitter"><a class="" href="https://twitter.com/TrznicaNoviSad" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                            viewBox="0 0 50 50" fill="white" class="icon">
+                            <path
+                                d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z">
+                            </path>
+                        </svg>
+                    </a></li>
+                <li class="ms-3 instagram"><a class="" href="https://www.instagram.com/trznicanovisad/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                            viewBox="0 0 50 50" fill="white" class="icon">
+                            <path
+                                d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z">
+                            </path>
+                        </svg>
+                    </a></li>
+                <li class="ms-3 facebook"><a class="" href="https://www.facebook.com/TrznicaNoviSad/?locale=sr_RS"
+                        target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                            viewBox="0 0 50 50" fill="white" class="icon">
+                            <path
+                                d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z">
+                            </path>
+                        </svg>
+                    </a></li>
+            </ul>
+            <div class="credits text-center py-2">
+                <a class="navbar-brand mr-5" id="navbar-brand" href="landingPage.html">
+                    <img src="../img/logo-icon.png" alt="Logo">
+                </a>
+                © 2023 Novi Sad Farmers Market
+            </div>
+        </div>
+    </section><!-- ======= Footer Section End ======= -->
+
+    <script src="../js/skripta.js"></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/skriptaApp.js"></script>
+
+</body>
+
+</html>

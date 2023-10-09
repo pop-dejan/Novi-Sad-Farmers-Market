@@ -1,0 +1,363 @@
+body {
+  background-color: #efedeb;
+}
+
+.fixed-top .navbar {
+  background-color: #59bc28;
+  padding: 0px;
+  --bs-navbar-toggler-border-color: #efedeb;
+}
+.fixed-top .navbar .container-fluid .navbar-brand {
+  padding: 0px;
+}
+.fixed-top .navbar .container-fluid .navbar-brand img {
+  width: 90px;
+  height: 70px;
+  padding-bottom: 3px;
+}
+.fixed-top .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.fixed-top .navbar .container-fluid .navbar-toggler:focus {
+  box-shadow: 0.2px 0.2px 0.2px white;
+}
+.fixed-top .navbar .container-fluid .offcanvas {
+  background-color: #59bc28;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-header .offcanvas-title {
+  color: #efedeb;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body {
+  margin: 0px;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav {
+  font-weight: bold;
+  --bs-nav-link-color: white;
+  --bs-nav-link-hover-color: white;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu[data-bs-popper] {
+  top: 94%;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu {
+  background-color: #59bc28;
+  margin-top: 0;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu .dropdown-item {
+  background-color: #59bc28;
+  color: white;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #40a20f;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .a:hover {
+  background-color: #40a20f;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .b:hover {
+  background-color: #40a20f;
+}
+.fixed-top .navbar .navbar-block {
+  display: block;
+  animation: slide-down 0.5s ease;
+}
+.fixed-top .navbar .navbar-none {
+  display: none;
+  animation: slide-down 0.5s ease;
+}
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fixed-top .progress-container {
+  width: 100%;
+  height: 8px;
+  background: white 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.fixed-top .progress-container .progress-bar {
+  height: 8px;
+  background: rgb(248, 47, 47);
+  width: 0%;
+}
+.fixed-top .progress-container img {
+  width: 22px;
+  height: 22px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animation-fade-in {
+  animation: fade-in ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.scroll-btn {
+  border-radius: 50%;
+  padding: 15px;
+  z-index: 99;
+  position: fixed;
+  margin-left: calc(100vw - 90px);
+  margin-top: calc(100vh - 170px);
+}
+.scroll-btn .fa-solid {
+  color: #ffffff;
+  font-size: 1.7rem;
+}
+
+.image-title {
+  background-image: url("../img/markets-headline.jpg");
+  background-size: cover;
+  background-position: 50%;
+  margin-top: 90px;
+  margin-left: 15%;
+  margin-right: 15%;
+  min-height: 250px;
+  display: flex;
+}
+.image-title .headline {
+  text-align: center;
+  align-self: center;
+  font-size: clamp(4.5rem, 2.5vw, 4.5rem);
+  color: white;
+  font-weight: 500;
+  width: 100%;
+}
+
+/** Vision Section **/
+.vision {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+}
+.vision p {
+  text-align: center;
+  font-size: clamp(3rem, 2.5vw, 3rem);
+  font-weight: 800;
+}
+
+.carousel-info {
+  display: flex;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.carousel-info .first-section {
+  width: 60%;
+}
+.carousel-info .first-section .main-img {
+  margin-bottom: 4px;
+  width: 100%;
+  height: 496px;
+}
+.carousel-info .first-section .secondary-images {
+  line-height: 1.2;
+  overflow: scroll;
+  text-align: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.carousel-info .first-section .secondary-images img {
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  display: inline;
+  width: 180px;
+  height: 150px;
+  transition: 0.1s ease-in-out;
+}
+.carousel-info .second-section {
+  width: 40%;
+  height: 650px;
+}
+.carousel-info .second-section .info {
+  height: 60%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  background-color: #59bc28;
+  margin: 0;
+}
+.carousel-info .second-section .info h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+.carousel-info .second-section .info p {
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
+}
+.carousel-info .second-section .map {
+  height: 40%;
+  padding: 1rem 2rem;
+  background-color: rgb(248, 47, 47);
+}
+.carousel-info .second-section .map h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+.carousel-info .second-section .map img {
+  max-height: 160px;
+  margin-top: 10px;
+  width: 100%;
+  color: white;
+}
+
+/** About-Text Section **/
+.about-text {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 32px;
+  align-items: center;
+}
+.about-text h1 {
+  text-align: start;
+  font-size: clamp(3rem, 2.5vw, 3rem);
+  font-weight: 700;
+}
+.about-text p {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.location {
+  margin-top: 40px;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 20px;
+}
+.location .headline {
+  font-size: 32px;
+  color: white;
+  background-color: rgb(248, 47, 47);
+  font-weight: 500;
+  text-align: center;
+}
+.location .mapa {
+  width: 100%;
+}
+
+.footer .footer-wrapper .contact {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.footer .footer-wrapper .links .nav-item .nav-link {
+  color: white;
+}
+.footer .footer-wrapper .credits {
+  color: white;
+}
+.footer .footer-wrapper .credits .navbar-brand {
+  padding: 0px;
+}
+.footer .footer-wrapper .credits .navbar-brand img {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 1px;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 5px;
+  }
+  .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu {
+    background-color: #40a20f;
+  }
+  .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu .dropdown-item {
+    background-color: #40a20f;
+  }
+  .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #2b7008;
+  }
+  .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .b:hover {
+    background-color: #59bc28;
+  }
+  .image-title {
+    margin-top: 70px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .vision {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .carousel-info {
+    margin-left: 0;
+    margin-right: 0;
+    display: block;
+  }
+  .carousel-info .first-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .carousel-info .first-section .main-img {
+    min-height: 350px;
+    height: auto;
+    max-height: 350px;
+  }
+  .carousel-info .first-section .secondary-images img {
+    min-height: 110px;
+  }
+  .carousel-info .second-section {
+    width: 100%;
+    height: auto;
+  }
+  .carousel-info .second-section .map {
+    margin-top: 20px;
+  }
+  .carousel-info .second-section .map img {
+    min-height: 350px;
+  }
+  .about-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .about-text h1 {
+    text-align: center;
+  }
+  .about-text p {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .location {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 600px) {
+  .image-title .headline {
+    font-size: clamp(3.2rem, 2.5vw, 3.2rem);
+  }
+}
+
+/*# sourceMappingURL=marketsTemerinskaStyle.css.map */

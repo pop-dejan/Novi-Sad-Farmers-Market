@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
+body {
+  background-color: #efedeb;
+}
+
+.fixed-top .navbar {
+  background-color: #59bc28;
+  padding: 0px;
+  --bs-navbar-toggler-border-color: #efedeb;
+}
+.fixed-top .navbar .container-fluid .navbar-brand {
+  padding: 0px;
+}
+.fixed-top .navbar .container-fluid .navbar-brand img {
+  width: 90px;
+  height: 70px;
+  padding-bottom: 3px;
+}
+.fixed-top .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.fixed-top .navbar .container-fluid .navbar-toggler:focus {
+  box-shadow: 0.2px 0.2px 0.2px white;
+}
+.fixed-top .navbar .container-fluid .offcanvas {
+  background-color: #59bc28;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-header .offcanvas-title {
+  color: #efedeb;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body {
+  margin: 0px;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav {
+  font-weight: bold;
+  --bs-nav-link-color: white;
+  --bs-nav-link-hover-color: white;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .nav-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu[data-bs-popper] {
+  top: 94%;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu {
+  background-color: #59bc28;
+  margin-top: 0;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu .dropdown-item {
+  background-color: #59bc28;
+  color: white;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #40a20f;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .a:hover {
+  background-color: #40a20f;
+}
+.fixed-top .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .b:hover {
+  background-color: #40a20f;
+}
+.fixed-top .navbar .navbar-block {
+  display: block;
+  animation: slide-down 0.5s ease;
+}
+.fixed-top .navbar .navbar-none {
+  display: none;
+  animation: slide-down 0.5s ease;
+}
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fixed-top .progress-container {
+  width: 100%;
+  height: 8px;
+  background: white 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.fixed-top .progress-container .progress-bar {
+  height: 8px;
+  background: rgb(248, 47, 47);
+  width: 0%;
+}
+.fixed-top .progress-container img {
+  width: 22px;
+  height: 22px;
+}
+
+.scroll-btn {
+  border-radius: 50%;
+  padding: 15px;
+  z-index: 99;
+  position: fixed;
+  margin-left: calc(100vw - 90px);
+  margin-top: calc(100vh - 170px);
+}
+.scroll-btn .fa-solid {
+  color: #ffffff;
+  font-size: 1.7rem;
+}
+
+.carousel {
+  margin-top: 90px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.carousel .carousel-inner .carousel-item img {
+  height: 470px;
+  filter: brightness(50%);
+}
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  text-align: start;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption h3 {
+  font-size: 45px;
+  font-weight: bold;
+}
+.carousel .carousel-inner .carousel-item .carousel-caption .btn {
+  font-weight: 600;
+  color: white;
+  background-color: orangered;
+  margin-bottom: 10px;
+}
+
+.vision {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+}
+.vision p {
+  text-align: center;
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: 500;
+}
+
+.location-main {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 20px;
+}
+.location-main .headline {
+  font-size: 32px;
+  color: white;
+  background-color: orangered;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.location-main .mapa {
+  width: 100%;
+}
+
+@keyframes bounce-in-left {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+  }
+  80% {
+    -webkit-transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes bounce-in-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animation-left {
+  animation: bounce-in-left 1.4s;
+}
+
+.animation-right {
+  animation: bounce-in-right 1.4s;
+}
+
+.animation-fade-in {
+  animation: fade-in ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.news {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 20px;
+}
+.news .headline {
+  font-size: 32px;
+  color: white;
+  background-color: #40b688;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.news .card-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.news .card-wrapper .card {
+  background-color: #abebcd;
+  height: 450px;
+  font-family: "Dosis", sans-serif;
+}
+.news .card-wrapper .card .link-img-wrapper {
+  overflow: hidden;
+}
+.news .card-wrapper .card .link-img-wrapper .card-img-top {
+  border-radius: 0px;
+  image-rendering: auto;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.news .card-wrapper .card .link-img-wrapper .card-img-top:hover {
+  transform: scale(1.1);
+}
+.news .card-wrapper .card .drugi {
+  opacity: 0.9;
+}
+.news .card-wrapper .card .body-link {
+  text-decoration: none;
+  color: #212529;
+}
+.news .card-wrapper .card .body-link .card-body .card-subtitle {
+  font-size: 18px;
+  font-weight: 600;
+}
+.news .card-wrapper .card .body-link .card-body .card-text {
+  color: black;
+  margin-top: 40px;
+  font-size: 21px;
+  font-weight: 1000;
+  height: 80px;
+}
+.news .card-wrapper .drugi-card {
+  background-color: #c7ebda;
+}
+
+.seasonal {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 20px;
+}
+.seasonal .card-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.seasonal .card-wrapper .first {
+  background-color: #00d084;
+}
+.seasonal .card-wrapper .second {
+  background-color: #eeb259;
+}
+.seasonal .card-wrapper .third {
+  background-color: #0693e3;
+}
+.seasonal .card-wrapper .card {
+  height: 350px;
+  border-radius: 0;
+}
+.seasonal .card-wrapper .card:hover {
+  opacity: 0.8;
+}
+.seasonal .card-wrapper .card .link-img-wrapper {
+  overflow: hidden;
+}
+.seasonal .card-wrapper .card .link-img-wrapper .card-img {
+  border-radius: 0px;
+  image-rendering: auto;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+.seasonal .card-wrapper .card .body-link {
+  text-decoration: none;
+}
+.seasonal .card-wrapper .card .body-link .card-body .card-text {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer .footer-wrapper .contact {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.footer .footer-wrapper .links .nav-item .nav-link {
+  color: white;
+}
+.footer .footer-wrapper .credits {
+  color: white;
+}
+.footer .footer-wrapper .credits .navbar-brand {
+  padding: 0px;
+}
+.footer .footer-wrapper .credits .navbar-brand img {
+  width: 50px;
+  height: 50px;
+  padding-bottom: 1px;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 5px;
+  }
+  .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu {
+    background-color: #40a20f;
+  }
+  .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu .dropdown-item {
+    background-color: #40a20f;
+  }
+  .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #2b7008;
+  }
+  .navbar .container-fluid .offcanvas .offcanvas-body .navbar-nav .b:hover {
+    background-color: #59bc28;
+  }
+  .carousel {
+    margin-top: 70px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .vision {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .location-main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .news {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .seasonal {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 770px) {
+  .news .card-wrapper .card {
+    height: 350px;
+  }
+  .seasonal .card-wrapper .card {
+    height: 350px;
+  }
+}
+@media (max-width: 562px) {
+  .carousel .carousel-inner .carousel-item .carousel-caption {
+    text-align: center;
+  }
+  .location-main .headline {
+    text-align: center;
+  }
+  .news .headline {
+    text-align: center;
+  }
+  .news .card-wrapper {
+    display: block;
+  }
+  .news .card-wrapper .card {
+    height: 500px;
+    margin-bottom: 10px;
+  }
+  .news .card-wrapper .card .card-text {
+    height: 40px;
+    margin-top: 0px;
+  }
+  .seasonal .card-wrapper {
+    display: block;
+  }
+  .seasonal .card-wrapper .card {
+    height: 500px;
+    margin-bottom: 10px;
+  }
+  .seasonal .card-wrapper .card .card-text {
+    height: 40px;
+    margin-top: 0px;
+  }
+  .seasonal .card-wrapper .treci {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 391px) {
+  .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+    font-size: 40px;
+  }
+  .news .card-wrapper .card {
+    height: 500px;
+  }
+  .news .card-wrapper .card .card-text {
+    margin-bottom: 10px;
+  }
+  .seasonal .card-wrapper .card {
+    height: 400px;
+  }
+  .seasonal .card-wrapper .card .card-body {
+    text-align: center;
+  }
+}
+@media (max-width: 310px) {
+  .news .card-wrapper .card {
+    height: 400px;
+  }
+  .news .card-wrapper .card .card-text {
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=landingPageStyle.css.map */

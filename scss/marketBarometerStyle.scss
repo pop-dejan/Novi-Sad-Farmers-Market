@@ -1,0 +1,418 @@
+body {
+    background-color: #efedeb;
+}
+
+//** Navbar Section **/
+.fixed-top {
+    .navbar {
+        background-color: #59bc28;
+        padding: 0px;
+        --bs-navbar-toggler-border-color: #efedeb;
+
+        .container-fluid {
+            .navbar-brand {
+                padding: 0px;
+
+                img {
+                    width: 90px;
+                    height: 70px;
+                    padding-bottom: 3px;
+                }
+            }
+
+            .navbar-toggler {
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+                }
+            }
+
+            .navbar-toggler:focus {
+                box-shadow: 0.2px 0.2px 0.2px white
+            }
+
+            .offcanvas {
+                background-color: #59bc28;
+
+
+                .offcanvas-header {
+                    .offcanvas-title {
+                        color: #efedeb;
+                    }
+                }
+
+                .offcanvas-body {
+                    margin: 0px;
+
+                    .navbar-nav {
+                        font-weight: bold;
+                        --bs-nav-link-color: white;
+                        --bs-nav-link-hover-color: white;
+
+                        .nav-item {
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                        }
+
+                        .dropdown-menu[data-bs-popper] {
+                            top: 94%;
+                        }
+
+                        .dropdown-menu {
+                            background-color: #59bc28;
+                            margin-top: 0;
+
+
+                            .dropdown-item {
+                                background-color: #59bc28;
+                                color: white;
+                                font-weight: bold;
+                                padding-top: 15px;
+                                padding-bottom: 15px;
+                            }
+
+                            .dropdown-item:hover {
+                                background-color: #40a20f;
+                            }
+                        }
+
+
+                        .a:hover {
+                            background-color: #40a20f;
+                        }
+
+                        .b:hover {
+                            background-color: #40a20f;
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar-block {
+            display: block;
+            animation: slide-down 0.5s ease;
+        }
+
+        .navbar-none {
+            display: none;
+            animation: slide-down 0.5s ease;
+        }
+
+        @keyframes slide-down {
+
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+
+    .progress-container {
+        width: 100%;
+        height: 8px;
+        background: white opacity($color: white);
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .progress-bar {
+            height: 8px;
+            background: rgb(248, 47, 47);
+            width: 0%;
+        }
+
+        img {
+            width: 22px;
+            height: 22px;
+        }
+    }
+}
+
+//** Navbar Section End **/
+
+//** Animations toggle **//
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.animation-fade-in {
+    animation: fade-in ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+//** Animations toggle End **//
+
+//** Scroll button **//
+.scroll-btn{
+    border-radius: 50%;
+    padding: 15px;
+    z-index: 99;
+    position: fixed;
+    margin-left: calc(100vw - 90px);
+    margin-top: calc(100vh - 170px);
+
+    .fa-solid{
+        color: #ffffff;
+        font-size: 1.7rem;
+    }
+}
+
+//** Scroll button End **/
+
+//** Image-Title Section **/
+.image-title {
+    background-color: #007336;
+    background-position: 50%;
+    margin-top: 90px;
+    margin-left: 15%;
+    margin-right: 15%;
+    min-height: 250px;
+    display: flex;
+
+    .headline {
+        text-align: center;
+        align-self: center;
+        font-size: 80px;
+        color: white;
+        font-weight: 500;
+        width: 100%;
+    }
+}
+
+//** Image-Title Section End **/
+
+//** Vision Section **/
+.vision {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 32px;
+    align-items: center;
+
+    p {
+        text-align: center;
+        font-size: clamp(1.25rem, 2.5vw, 2rem);
+        font-weight: 500;
+    }
+}
+
+//** Vision Section End**/
+
+//** Buttons Wrapper Section End**/
+.buttons-wrapper{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+//** Buttons Wrapper Section End**/
+
+//** Tables Section **//
+.all-tables-wrapper {
+    .fruits {
+        display: none;
+    }
+
+    .other {
+        display: none;
+    }
+
+    .table-wrapper {
+        margin-bottom: 20px;
+        margin-left: 15%;
+        margin-right: 15%;
+        padding: 0;
+        overflow: auto;
+
+        table {
+            padding: 0;
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            background-color: #59bc28;
+            border: 1px solid #59bc28;
+
+            tbody {
+                margin: 0;
+                padding: 0;
+
+                tr {
+                    color: #333;
+                    margin: 0;
+                    padding: 0;
+                    border: 1px solid #59bc28;
+
+                    input[type="date"] {
+                        background-color: #efedeb;
+                        color: #007336;
+                        font-weight: 600;
+                    }
+
+                    .markets {
+                        margin: 0;
+                        color: #efedeb;
+                        padding: 1.8rem 0.6rem;
+                        background-color: #59bc28;
+                        border: 1px solid #007336;
+                        text-align: center;
+                    }
+
+                    .date {
+                        text-align: center;
+                        padding: 1.8rem 0.8rem;
+                        background-color: #007336;
+                        border: 1px solid #59bc28;
+                    }
+
+                    td {
+                        margin: 0;
+                        padding: 0.2rem 1rem;
+                        color: #007336;
+                        font-weight: 600;
+                        background-color: #efedeb;
+                        border: 1px solid #007336;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//** Tables Section End **//
+
+//** Footer Section **/
+.footer {
+    .footer-wrapper {
+        .contact {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .links {
+            .nav-item {
+                .nav-link {
+                    color: white;
+                }
+            }
+        }
+
+        .credits {
+            color: white;
+
+            .navbar-brand {
+                padding: 0px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    padding-bottom: 1px;
+                }
+            }
+        }
+    }
+}
+
+//** Footer Section End**/
+
+@media (max-width:1255px) {
+
+    //** Tables Section **/
+    .all-tables-wrapper {
+        .table-wrapper {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    //** Tables Section End **/
+}
+
+@media (max-width: 992px) {
+
+    //** Navbar Section **/
+    .navbar {
+        padding: 5px;
+
+        .container-fluid {
+            .offcanvas {
+                .offcanvas-body {
+                    .navbar-nav {
+                        .dropdown-menu {
+                            background-color: #40a20f;
+
+                            .dropdown-item {
+                                background-color: #40a20f;
+                            }
+
+                            .dropdown-item:hover {
+                                background-color: #2b7008;
+                            }
+                        }
+
+                        .b:hover {
+                            background-color: #59bc28;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //** Navbar Section End **/
+
+    //** Image-Title Section **/
+    .image-title {
+        margin-top: 70px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    //** Image-Title Section End **/
+
+    //** Vision Section **/
+    .vision {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    //** Vision Section End **/
+}
+
+@media (max-width: 600px) {
+
+    //** Image-Title Section **/
+    .image-title {
+        .headline {
+            font-size: 60px;
+        }
+    }
+
+    //** Image-Title Section End **/
+}
+
+@media (max-width:360px) {
+
+    //** Image-Title Section **/
+    .image-title {
+        .headline {
+            font-size: 45px;
+        }
+    }
+
+    //** Image-Title Section End **/
+}
